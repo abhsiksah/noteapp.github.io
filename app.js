@@ -86,6 +86,15 @@ search.addEventListener("input", function(){
     })
 })
 
+const chk = document.getElementById("chk");
+
+chk.addEventListener('click', () => {
+	document.body.classList.toggle('dark');
+  console.log("dark");
+});
+
+
+
 /*
 Further Features:
 1. Add Title
