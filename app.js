@@ -67,6 +67,13 @@ function deleteNote(index) {
   showNotes();
 }
 
+const chk = document.getElementById("chk");
+
+chk.addEventListener('click', () => {
+	document.body.classList.toggle('dark');
+  console.log("dark");
+});
+
 
 let search = document.getElementById('searchTxt');
 search.addEventListener("input", function(){
@@ -86,12 +93,7 @@ search.addEventListener("input", function(){
     })
 })
 
-const chk = document.getElementById("chk");
 
-chk.addEventListener('click', () => {
-	document.body.classList.toggle('dark');
-  console.log("dark");
-});
 
 
 
