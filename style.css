@@ -1,13 +1,52 @@
 
-body.dark {
+/* body.dark {
 
 	background: rgb(48, 48, 48);
-    color: rgb(114, 141, 141);
+    color: white;
     opacity: .9;
     
+} */
+
+
+	.dark {
+
+		background: rgb(44, 42, 42);
+		color: goldenrod;
+		/* opacity: .9; */
+		/* color:gold */
+		
+	}	
+
+
+	
+.btn{
+	background: rgba(0, 0, 0, 0.904);
+	
+	transition: 1s;
+	color: white;
 }
 
+.btn:hover{
+	/* background-color: rgb(54, 49, 49); */
+	background-color: goldenrod;
 
+	transform: scale(1.05);
+	
+}
+/* 
+.card-body{
+	background: rgb(128, 125, 125);
+	opacity: .4;
+	color: whitesmoke;
+}
+  */
+
+  /* .dark{
+		background: rgb(66, 65, 65);
+		background-color: #111;
+	color: #fff;
+
+  } */
 
 
 .label {
@@ -47,3 +86,6 @@ body.dark {
 	opacity: 0;
 	position: absolute;
 }
+
+
+
