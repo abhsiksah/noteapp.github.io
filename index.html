@@ -18,7 +18,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button>           
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -41,25 +41,25 @@
                 </div>
                 <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search"
                     aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Refresh</button>
             </form>
             
         </div>
     </nav>
 
 
-    <div class="container my-3">
+    <div class="container my-3 ">
         <h1>Welcome To Magic Notes</h1>
         <div class="card">
-            <div class="card-body">
-                <div class="form-group">
+            <div class="card-body" id="change-1">
+                <div class="form-group ">
                     <h5 class="card-title">Add title</h5>
                     <input type="text" class="form-control" id="addTitle" aria-describedby="title"
                         placeholder="Enter title">
                 </div>
                 <h5 class="card-title">Add a note</h5>
                 <div class="form-group">
-                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                    <textarea class="form-control" id="addTxt" rows="3" placeholder="Enter text"></textarea>
                 </div>
                 <button class="btn btn-primary" id="addBtn">Add Note</button>
             </div>
