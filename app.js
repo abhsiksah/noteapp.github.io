@@ -35,9 +35,10 @@ function showNotes() {
   let html = "";
   notesObj.forEach(function(element, index) {
     html += `
-            <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+            <div class="noteCard my-2 mx-2 card " id="change-2" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">${element.title}</h5>
+                        <hr>
                         <p class="card-text"> ${element.text}</p>
                         <button id="${index}"onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
                     </div>
@@ -67,12 +68,18 @@ function deleteNote(index) {
   showNotes();
 }
 
-const chk = document.getElementById("chk");
 
-chk.addEventListener('click', () => {
+const chk = document.getElementById("chk");
+// const card = document.getElementById("change-1")
+// console.log(card)
+chk.addEventListener('change', () => {
 	document.body.classList.toggle('dark');
-  console.log("dark");
+  // console.log("dark");
+  document.getElementById("change-1").classList.toggle('dark');
+  document.getElementById("navbar").classList.toggle('dark');
+
 });
+
 
 
 let search = document.getElementById('searchTxt');
@@ -81,8 +88,9 @@ search.addEventListener("input", function(){
     let inputVal = search.value.toLowerCase();
     // console.log('Input event fired!', inputVal);
     let noteCards = document.getElementsByClassName('noteCard');
+    // console.log(noteCards)
     Array.from(noteCards).forEach(function(element){
-        let cardTxt = element.getElementsByTagName("p")[0].innerText;
+        let cardTxt = element.getElementsByTagName("h5")[0].innerText;
         if(cardTxt.includes(inputVal)){
             element.style.display = "block";
         }
@@ -91,7 +99,7 @@ search.addEventListener("input", function(){
         }
         // console.log(cardTxt);
     })
-})
+});
 
 
 
